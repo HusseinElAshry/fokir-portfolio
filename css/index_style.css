@@ -1,0 +1,133 @@
+
+@font-face
+{
+    font-family: source ;
+    src: url(../source/Source_Sans_Pro/SourceSansPro-Black.ttf);
+}
+:root
+{
+    scroll-behavior: smooth;
+}
+.logo
+{
+    font-size: 3rem !important;
+    color: #FF305B !important;
+    font-family: sou;
+}
+#home
+{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7 )),  url(../img/img/slider/slider-01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.drag
+{
+    width: 95%;
+    height: 95%;
+    background: rgba(0,0,0,0.6);
+    top: 100%;
+    left: 2.5%;
+}
+.dragParent
+{
+    max-width: fit-content;
+    overflow: hidden;
+    box-shadow: #fff -20px -20px;
+    border-radius: 1rem;
+}
+.dragParent:hover .drag
+{
+    top: 2.5%;
+}
+.drag
+{
+    transition :all 2s 10ms ease-in-out;
+    border-radius: 1rem;
+}
+.dragBorder
+{
+    box-shadow: #000 -25px -25px;
+    max-width: fit-content;
+    border-radius: 1rem;
+}
+.z-index
+{
+    z-index: 100000000;
+}
+.btn-bg
+{
+ background: #FF305B;   
+}
+.master::after
+{
+    content: "";
+    border-top: #FF305B solid 2px; 
+    border-bottom: #FF305B solid 2px;
+    padding: 10px;  
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 8rem;
+}
+.master::before
+{
+    content: "";
+    border: #FF305B solid 1px; 
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 16rem;
+}
+#portfolio .dragParent 
+{
+    box-shadow: none;
+}
+#portfolio .col-lg-4 div
+{
+    margin: 0 auto;
+}
+.clientsCh:hover
+{
+    background: white !important;
+}
+.clientsCh
+{
+    margin: 2rem 0;
+}
+.linearGradient
+{
+    background:linear-gradient(135deg , #FF305B 15% ,rgba(65, 50, 50, 0.6) 15% 85%,#FF305B 85% ) ;
+    width: 70%;
+}
+.border-radius
+{
+    border-radius: 100%;
+}
+.goldy
+{
+    color: gold;
+}
+.iconic
+{
+    background: rgb(3, 3, 3)!important;
+    border-radius: 20px!important;
+}
+.carousel-indicators
+{
+    position: absolute;
+    bottom: -3rem;
+}
+.icon
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
